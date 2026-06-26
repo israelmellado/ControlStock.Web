@@ -84,6 +84,7 @@ cd controlstock-erp
 
 3 Ejecutar proyecto:
 ```dotnet run```
+```
 ---
 
 ## 📸 Capturas
