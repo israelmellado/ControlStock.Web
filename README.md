@@ -89,7 +89,7 @@ cd controlstock-erp
 
 ## 📸 Capturas
 
-- Video:▶️[.NET,Identity,Razor Pages + MVC](https://youtu.be/86ETKryHBPw)
+- Video:▶️[.NET,Identity,Razor Pages + MVC](https://youtu.be/E3eHuhrRrp8)
 
 ## 📌 Estado del proyecto
 
