@@ -1,0 +1,49 @@
+﻿@model dynamic
+
+@{
+    ViewData["Title"] = "Portal Empresa";
+}
+
+<h1>🏢 ControlStock - Portal de Empresa</h1>
+
+<hr />
+
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-body">
+                <h5>Productos</h5>
+                <h2>@Model.TotalProductos</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card text-white bg-danger mb-3">
+            <div class="card-body">
+                <h5>Stock Bajo</h5>
+                <h2>@Model.StockBajo</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-body">
+                <h5>Categorías</h5>
+                <h2>@Model.TotalCategorias</h2>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<hr />
+
+@if (User.IsInRole("Admin"))
+{
+    <a class="btn btn-dark" asp-controller="Admin" asp-action="Index">
+        🔐 Ir a Panel Admin (ERP)
+    </a>
+}

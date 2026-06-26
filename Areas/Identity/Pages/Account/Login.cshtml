@@ -1,0 +1,96 @@
+@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+    ViewData["BodyClass"] = "login-page";
+}
+
+<style>
+    .login-page {
+        background: linear-gradient(120deg, #1f4037, #99f2c8);
+    }
+
+    .login-card {
+        width: 380px;
+        border: none;
+        border-radius: 12px;
+    }
+
+    .login-container {
+        min-height: 100vh;
+    }
+    .btn-primary {
+    transition: all 0.25s ease-in-out;
+    border-radius: 8px;
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+</style>
+
+<div class="container login-container d-flex justify-content-center align-items-center">
+ 
+    <div class="card login-card shadow-lg p-4">
+
+        <h3 class="text-center mb-3">ControlStock</h3>
+        <p class="text-center text-muted">Iniciar sesión</p>
+
+        <hr />
+
+        <form id="account" method="post">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-2"></div>
+
+            <!-- EMAIL -->
+            <div class="form-group mb-3">
+                <label asp-for="Input.Email"></label>
+                <input asp-for="Input.Email" class="form-control" placeholder="correo@ejemplo.com" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+
+            <!-- PASSWORD -->
+            <div class="form-group mb-3">
+                <label asp-for="Input.Password"></label>
+                <input asp-for="Input.Password" class="form-control" placeholder="••••••••" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+
+            <!-- REMEMBER -->
+            <div class="form-check mb-3">
+                <input asp-for="Input.RememberMe" class="form-check-input" />
+                <label asp-for="Input.RememberMe" class="form-check-label"></label>
+            </div>
+
+            <!-- BUTTON -->
+            <button id="login-submit" type="submit" class="btn btn-primary w-100">
+                Entrar
+            </button>
+
+            <hr />
+
+            <!-- LINKS -->
+            <div class="text-center small">
+                <p>
+                    <a asp-page="./ForgotPassword">¿Olvidaste tu contraseña?</a>
+                </p>
+                <p>
+                    <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">
+                        Crear nueva cuenta
+                    </a>
+                </p>
+                <p>
+                    <a asp-page="./ResendEmailConfirmation">Reenviar confirmación</a>
+                </p>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow-sm">
+        <div class="card-body p-4">
+
+            <h1 class="mb-3">🔒 Privacy Policy</h1>
+
+            <p class="text-muted">
+                Última actualización: @DateTime.Now.ToString("dd/MM/yyyy")
+            </p>
+
+            <hr />
+
+            <h4>1. Información general</h4>
+            <p>
+                Esta aplicación <strong>ControlStock</strong> es un sistema de gestión de inventario (ERP)
+                diseñado para uso interno de la empresa.
+            </p>
+
+            <h4>2. Datos que recopilamos</h4>
+            <ul>
+                <li>Información de usuarios (email, nombre de acceso)</li>
+                <li>Datos de productos y categorías</li>
+                <li>Historial de operaciones dentro del sistema</li>
+            </ul>
+
+            <h4>3. Uso de la información</h4>
+            <p>
+                Los datos se utilizan exclusivamente para la gestión interna del inventario,
+                control de stock y administración del sistema.
+            </p>
+
+            <h4>4. Seguridad</h4>
+            <p>
+                El sistema utiliza autenticación basada en <strong>ASP.NET Identity</strong>,
+                con control de roles (Admin / User) para proteger la información.
+            </p>
+
+            <h4>5. Acceso a datos</h4>
+            <p>
+                Solo los usuarios autorizados pueden acceder a la información según su rol.
+            </p>
+
+            <h4>6. Contacto</h4>
+            <p>
+                Para cualquier duda sobre privacidad, contacte con el administrador del sistema.
+            </p>
+
+            <hr />
+
+            <p class="text-muted small">
+                © @DateTime.Now.Year ControlStock - Sistema ERP interno
+            </p>
+
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,12 @@
+﻿@model ControlStock.Web.Models.Categoria
+
+<h2>Nueva Categoría</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label>Nombre</label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success mt-2">Guardar</button>
+</form>

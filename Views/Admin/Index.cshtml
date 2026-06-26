@@ -1,0 +1,44 @@
+﻿@model ControlStock.Web.ViewsModels.AdminDashboardViewModel
+
+<h1>🛠 ERP ControlStock</h1>
+
+<hr />
+
+<div class="row">
+
+    <div class="col-md-3">
+        <div class="card bg-primary text-white p-3">
+            <h5>Productos</h5>
+            <h2>@Model.TotalProductos</h2>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-danger text-white p-3">
+            <h5>Stock Bajo</h5>
+            <h2>@Model.StockBajo</h2>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-success text-white p-3">
+            <h5>Valor Inventario</h5>
+            <h2>@Model.ValorInventario</h2>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-warning text-white p-3">
+            <h5>Categorías</h5>
+            <h2>@Model.TotalCategorias</h2>
+        </div>
+    </div>
+
+</div>
+
+<hr />
+
+<h3>Gestión ERP</h3>
+
+<a class="btn btn-primary" asp-action="Productos">📦 Productos</a>
+<a class="btn btn-secondary" asp-action="Categorias">🗂 Categorías</a>
