@@ -99,7 +99,9 @@ cd controlstock-erp
 
 ## 👨‍💻 Autor
 
-Desarrollado como sistema ERP de aprendizaje con ASP.NET Core MVC.
+- Autor: [Israel M.P.]
+- Email: israel_melli@hotmail.com
+- GitHub: israelmellado
 
 ## 📄 Licencia
 
