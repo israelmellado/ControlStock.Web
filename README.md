@@ -82,22 +82,24 @@ cd controlstock-erp
 2 Ejecutar migraciones:
 ```dotnet ef database update```
 
-Ejecutar proyecto:
-dotnet run
-📸 Capturas
+3 Ejecutar proyecto:
+```dotnet run```
+---
 
-(Añade aquí screenshots del dashboard, productos y categorías)
+## 📸 Capturas
 
-📌 Estado del proyecto
+
+
+## 📌 Estado del proyecto
 
 ✔ En desarrollo
 ✔ Funcional
 ✔ Base ERP lista para escalar
 
-👨‍💻 Autor
+## 👨‍💻 Autor
 
 Desarrollado como sistema ERP de aprendizaje con ASP.NET Core MVC.
 
-📄 Licencia
+## 📄 Licencia
 
 Uso educativo / desarrollo personal
